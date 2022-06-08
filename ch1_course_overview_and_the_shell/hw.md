@@ -1,12 +1,12 @@
 1. 本课程需要使用类Unix shell，例如 Bash 或 ZSH。如果您在 Linux 或者 MacOS 上面完成本课程的练习，则不需要做任何特殊的操作。如果您使用的是 Windows，则您不应该使用 cmd 或是 Powershell；您可以使用[Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/)或者是 Linux 虚拟机。使用`echo $SHELL`命令可以查看您的 shell 是否满足要求。如果打印结果为`/bin/bash`或`/usr/bin/zsh`则是可以的。
 
-![image-20220608225939969](D:\Study\missing_semester\ch1_course_overview_and_the_shell\img\1.png)
+![image-20220608225939969](./img/1.png)
 
 
 
 2. 在 `/tmp` 下新建一个名为 `missing` 的文件夹。
 
-![image-20220608230232560](D:\Study\missing_semester\ch1_course_overview_and_the_shell\img\2.png)
+![image-20220608230232560](./img/2.png)
 
 
 
@@ -14,7 +14,7 @@
 
 4. 用 `touch` 在 `missing` 文件夹中新建一个叫 `semester` 的文件。
 
-![image-20220608230758328](D:\Study\missing_semester\ch1_course_overview_and_the_shell\img\4.png)
+![image-20220608230758328](./img/4.png)
 
 
 
@@ -27,7 +27,7 @@
 
    第一行可能有点棘手， `#` 在Bash中表示注释，而 `!` 即使被双引号（`"`）包裹也具有特殊的含义。 单引号（`'`）则不一样，此处利用这一点解决输入问题。更多信息请参考 [Bash quoting 手册](https://www.gnu.org/software/bash/manual/html_node/Quoting.html)
 
-![image-20220608231011553](D:\Study\missing_semester\ch1_course_overview_and_the_shell\img\5.png)
+![image-20220608231011553](./img/5.png)
 
 
 
@@ -35,7 +35,7 @@
 
    答：`semester`没有可执行权限
 
-![image-20220608231213956](D:\Study\missing_semester\ch1_course_overview_and_the_shell\img\6.png)
+![image-20220608231213956](./img/6.png)
 
 
 
@@ -45,14 +45,14 @@
 
    答：`shebang`告知了shell使用什么程序去执行代码。
 
-![image-20220608231740373](D:\Study\missing_semester\ch1_course_overview_and_the_shell\img\8.png)
+![image-20220608231740373](./img/8.png)
 
 
 
 9. 使用 `|` 和 `>` ，将 `semester` 文件输出的最后更改日期信息，写入主目录下的 `last-modified.txt` 的文件中
 
-![image-20220608232946167](D:\Study\missing_semester\ch1_course_overview_and_the_shell\img\9.png)
+![image-20220608232946167](./img/9.png)
 
 
 
-9. 写一段命令来从 `/sys` 中获取笔记本的电量信息，或者台式机 CPU 的温度。注意：macOS 并没有 sysfs，所以 Mac 用户可以跳过这一题。
+10. 写一段命令来从 `/sys` 中获取笔记本的电量信息，或者台式机 CPU 的温度。注意：macOS 并没有 sysfs，所以 Mac 用户可以跳过这一题。
